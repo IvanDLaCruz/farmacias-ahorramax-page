@@ -1,0 +1,73 @@
+.hero-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-logo img {
+  max-width: 250px; /* Ajusta el tamaño de tu logo */
+  margin-bottom: 20px;
+}
+
+.hero-offer {
+  margin-bottom: 20px;
+}
+
+.offer-title {
+  color: #e44d26; /* Un color similar al de la imagen */
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.offer-subtitle {
+  color: #e44d26;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 5px 0 0;
+}
+
+.hero-description {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .offer-title {
+    font-size: 2.5em;
+  }
+  .offer-subtitle {
+    font-size: 1.5em;
+  }
+  .hero-description {
+    font-size: 1em;
+  }
+  .cta-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
