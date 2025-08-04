@@ -1,29 +1,24 @@
-import React from 'react';
-import './Hero.css'; // Si decides usar un archivo CSS
+import "./Hero.css";
 
-const Hero = () => {
+function Hero() {
   return (
-    <section className="hero-section">
+    <section className="hero">
       <div className="hero-content">
-        <div className="hero-logo">
-          <img src="public/images/logo-ahorramax-sf.png" alt="Farmacia Ahorra Max Logo" />
+        <div className="hero-text">
+          <h1>¡Aprovecha nuestras promociones!</h1>
+          <p>Encontrarás una amplia variedad de medicamentos genéricos, similares y de patente. También contamos con productos naturales, artículos de ortopedia y todo lo necesario para rehabilitación.</p>
+          <a href="#ofertas" className="hero-button">Ver promociones</a>
         </div>
-        
-        <div className="hero-offer">
-          <h1 className="offer-title">25% DE DESCUENTO</h1>
-          <h2 className="offer-subtitle">TODOS LOS DÍAS</h2>
+        <div className="hero-image">
+          <img
+            src="/images/promo-25.png"
+            alt="Promoción del 25% de descuento"
+            className="promo-img"
+          />
         </div>
-        
-        <p className="hero-description">
-          En Farmacias Ahorra Max, tu salud y economía son importantes. Aprovecha nuestro descuento diario en una amplia selección de productos.
-        </p>
-        
-        <button className="cta-button">
-          Ver Productos en Oferta
-        </button>
       </div>
     </section>
   );
-};
+}
 
 export default Hero;
