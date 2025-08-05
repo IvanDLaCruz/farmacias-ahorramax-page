@@ -39,10 +39,15 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
+
 }
+
+
 
 .hero-button:hover {
   background-color: #00796b;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .promo-img {
@@ -52,7 +57,7 @@
 }
 
 .promo-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   transition: transform 0.3s ease;
 }
 
