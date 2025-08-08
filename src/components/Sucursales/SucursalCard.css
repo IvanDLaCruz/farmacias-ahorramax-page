@@ -108,6 +108,7 @@
   }
   
   .sucursal-image-container {
-    height: 240px;
+    height: 240px; /*aa*/
+  
   }
 }
