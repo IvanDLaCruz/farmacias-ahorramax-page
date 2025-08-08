@@ -5,11 +5,9 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-      <img className="logo_ahorra" src="/images/logo-ahorramax-sf.png" alt="" />
-
         <div className="hero-text">
-          <h1 className="titulo">¡Aprovecha nuestras promociones!</h1>
-          <p className="subtitulo">Encontrarás una amplia variedad de medicamentos genéricos, similares y de patente. También contamos con productos naturales, artículos de ortopedia y todo lo necesario para rehabilitación.</p>
+          <h1>¡Aprovecha nuestras promociones!</h1>
+          <p>Encontrarás una amplia variedad de medicamentos genéricos, similares y de patente. También contamos con productos naturales, artículos de ortopedia y todo lo necesario para rehabilitación.</p>
           <a href="#ofertas" className="hero-button">Ver promociones</a>
         </div>
         <div className="hero-image">
@@ -21,6 +19,7 @@ function Hero() {
         </div>
       </div>
     </section>
+    
   );
 }
 

@@ -1,10 +1,64 @@
+/* Contenedor principal del elemento */
 .elemento-animado {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease-out;
+  height: 100%; /* Ocupa toda la altura disponible */
+  display: flex;
+  flex-direction: column;
 }
 
 .elemento-animado.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Contenedor de imagen - altura completa */
+.image-container {
+  position: relative;
+  flex-grow: 1; /* Ocupa todo el espacio disponible */
+  min-height: 250px; /* Altura mínima */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+}
+
+/* Imagen - altura completa manteniendo aspecto */
+.element-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre el contenedor manteniendo relación de aspecto */
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* Placeholder de carga */
+.image-skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+}
+
+/* Texto debajo de la imagen */
+.sucursal-info {
+  padding: 15px;
+  background: white;
+  z-index: 2; /* Asegura que esté sobre la imagen si es necesario */
+}
+
+/* Ajustes para el carrusel */
+.swiper-slide {
+  height: auto; /* Altura determinada por el contenido */
+  display: flex;
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+  .image-container {
+    min-height: 200px;
+  }
 }

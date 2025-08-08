@@ -1,35 +1,128 @@
-/* 🎯 Estilo base: 1 por fila (móviles) */
-.contenedorImages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 16px;
-}
-
-.contenedorImages > div {
-  flex: 0 0 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
-  border-radius: 8px;
-}
-
-.contenedorImages img {
+/* 🎯 Estilos base para el contenedor Swiper */
+.swiper-container {
   width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+/* 🖼️ Estilos para cada slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
   height: auto;
+}
+
+/* 🎨 Estilos para las tarjetas de promoción */
+.promo-card {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+}
+
+/* 🖼️ Estilos para la imagen */
+.promo-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
   border-radius: 10px;
 }
 
-/* 📱 Tablets: 2 por fila (a partir de 600px) */
-@media (min-width: 600px) {
-  .contenedorImages > div {
-    flex: 0 0 calc(50% - 16px);
+.promo-card:hover .promo-image {
+  transform: scale(1.03);
+  border-radius: 10px;
+
+}
+
+/* 📝 Estilos para el título */
+.promo-title {
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+/* 🎮 Estilos de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4a6cf7;
+  background: rgba(255, 255, 255, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* 🔘 Estilos de paginación */
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4a6cf7;
+  transform: scale(1.2);
+}
+
+/* 📱 Responsive para móviles */
+@media (max-width: 600px) {
+  .swiper-container {
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+
+  .promo-image {
+    height: 160px;
+    border-radius: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }
 
-/* 🖥️ Desktop: 3 por fila (a partir de 900px) */
-@media (min-width: 900px) {
-  .contenedorImages > div {
-    flex: 0 0 calc(33.33% - 16px);
+/* 🖥️ Estilos para desktop */
+@media (min-width: 1024px) {
+  .swiper-container {
+    max-width: 1200px;
+    border-radius: 10px;
+  }
+
+  .promo-image {
+    height: 240px;
+    border-radius: 10px;
   }
 }
