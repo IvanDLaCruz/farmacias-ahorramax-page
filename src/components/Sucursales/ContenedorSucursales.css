@@ -1,0 +1,20 @@
+.contenedor-sucursales {
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.lista-sucursales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Responsive para tablets y mayores */
+@media (min-width: 768px) {
+  .lista-sucursales {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
