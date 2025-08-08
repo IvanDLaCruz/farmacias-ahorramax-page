@@ -5,7 +5,7 @@ const sucursalesSonora = [
     colonia: 'Col. Centro',
     ciudad: 'Ciudad Obregon',
     telefono: '644 415 2541',
-    imagen: '/images/nvo-horizonte.webp',
+    imagen: '/images/sucursales_sonora/Suc_MiguelAleman.jpg',
     mapsUrl: 'https://maps.google.com/?q=Av.+Ju%C3%A1rez+123',
   },
   {
@@ -14,7 +14,7 @@ const sucursalesSonora = [
     colonia: 'Col. Prados del Tepeyac',
     ciudad: 'Ciudad Obregon',
     telefono: '644 412 7277',
-    imagen: '/images/sucursal-norte.jpg',
+    imagen: '/images/sucursales_sonora/Suc_Central.jpg',
     mapsUrl: 'https://maps.google.com/?q=Calle+Reforma+456',
   },
   {
@@ -23,7 +23,7 @@ const sucursalesSonora = [
     colonia: 'Col. Fovisste 2',
     ciudad: 'Ciudad Obregon',
     telefono: '644 690 9779',
-    imagen: '/images/nvo-horizonte.webp',
+    imagen: '/images/sucursales_sonora/Suc_Paris.jpg',
     mapsUrl: 'https://maps.google.com/?q=Av.+Ju%C3%A1rez+123',
   },
   {
@@ -32,7 +32,7 @@ const sucursalesSonora = [
     colonia: 'Col. Centro',
     ciudad: 'Ciudad Obregon',
     telefono: '644 144 1208',
-    imagen: '/images/sucursal-norte.jpg',
+    imagen: '/images/sucursales_sonora/Suc_Galeana.jpg',
     mapsUrl: 'https://maps.google.com/?q=Calle+Reforma+456',
   },
   {
@@ -41,7 +41,7 @@ const sucursalesSonora = [
     colonia: 'Municipio Libre',
     ciudad: 'Ciudad Obregon',
     telefono: '644 179 0634',
-    imagen: '/images/nvo-horizonte.webp',
+    imagen: '/images/sucursales_sonora/Suc_Jalisco.jpg',
     mapsUrl: 'https://maps.google.com/?q=Av.+Ju%C3%A1rez+123',
   },
   {
@@ -50,7 +50,7 @@ const sucursalesSonora = [
     colonia: 'Col. Benito Juarez',
     ciudad: 'Ciudad Obregon',
     telefono: '644 688 1827',
-    imagen: '/images/sucursal-norte.jpg',
+    imagen: '/images/sucursales_sonora/Suc_PlanOriente.jpg',
     mapsUrl: 'https://maps.google.com/?q=Calle+Reforma+456',
   },
   {
@@ -59,7 +59,7 @@ const sucursalesSonora = [
     colonia: 'Infonavit Yucujimari',
     ciudad: 'Ciudad Obregon',
     telefono: '644 414 5920',
-    imagen: '/images/nvo-horizonte.webp',
+    imagen: '//images/sucursales_sonora/Suc_Guerrero.jpg',
     mapsUrl: 'https://maps.google.com/?q=Av.+Ju%C3%A1rez+123',
   },
   {
@@ -68,16 +68,16 @@ const sucursalesSonora = [
     colonia: 'Col. Centro',
     ciudad: 'Hermosillo',
     telefono: '662 217 9259',
-    imagen: '/images/sucursal-norte.jpg',
+    imagen: '/images/sucursales_sonora/Suc_Hermosillo.jpg',
     mapsUrl: 'https://maps.google.com/?q=Calle+Reforma+456',
   },
   {
-    nombre: 'Sucursal Gaymas',
+    nombre: 'Sucursal Guaymas',
     direccion: 'Av. Serdan 01',
     colonia: 'Col. Centro',
     ciudad: 'Guaymas',
     telefono: '622 113 2369',
-    imagen: '/images/nvo-horizonte.webp',
+    imagen: '/images/sucursales_sonora/Suc_Guaymas.jpg',
     mapsUrl: 'https://maps.google.com/?q=Av.+Ju%C3%A1rez+123',
   },
   {
@@ -86,7 +86,7 @@ const sucursalesSonora = [
     colonia: 'Col. Centro',
     ciudad: 'Huatabampo',
     telefono: '647 112 1408',
-    imagen: '/images/sucursal-norte.jpg',
+    imagen: '/images/sucursales_sonora/Suc_Huatabampo.jpg',// falta imagen
     mapsUrl: 'https://maps.google.com/?q=Calle+Reforma+456',
   },
 ];

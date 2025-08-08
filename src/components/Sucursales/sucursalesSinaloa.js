@@ -5,7 +5,7 @@ const sucursalesSinaloa = [
     colonia: "Col. Jiquilpan",
     ciudad: "Los Mochis",
     telefono: "668 688 6506",
-    imagen: "",
+    imagen: "/images/sucursales_sinaloa/Suc_",
     mapsUrl: "https://maps.google.com/?q=Av.+Ju%C3%A1rez+123"
   },
   {
@@ -14,7 +14,7 @@ const sucursalesSinaloa = [
     colonia: "Fracc. Villas de Santiago",
     ciudad: "Los Mochis",
     telefono: "668 177 1294",
-    imagen: "/images/sucursal-norte.jpg",
+    imagen: "/images/sucursales_sinaloa/Suc_PedroAnaya.jpg",
     mapsUrl: "https://maps.google.com/?q=Calle+Reforma+456"
   },
   {
@@ -23,7 +23,7 @@ const sucursalesSinaloa = [
     colonia: "Fracc. Nuevo Horizonte",
     ciudad: "Los Mochis",
     telefono: "668 165 3227",
-    imagen: "/images/nvo-horizonte.webp",
+    imagen: "/images/sucursales_sinaloa/Suc_NvoHorizonte.jpg",
     mapsUrl: "https://maps.google.com/?q=Av.+Ju%C3%A1rez+123"
   },
   {
@@ -32,16 +32,16 @@ const sucursalesSinaloa = [
     colonia: "Fracc. Alamos Country",
     ciudad: "Los Mochis",
     telefono: "668 824 7212",
-    imagen: "/images/sucursal-norte.jpg",
+    imagen: "/images/sucursales_sinaloa/Suc_AlamosCountry.jpg",
     mapsUrl: "https://maps.google.com/?q=Calle+Reforma+456"
   },
   {
-    nombre: "Sucursal Centro",
+    nombre: "Sucursal Castro",
     direccion: "Blvd. Rosendo G. Castro 320 pte",
     colonia: "Col. Centro",
     ciudad: "Los Mochis",
     telefono: "668 815 8166",
-    imagen: "/images/nvo-horizonte.webp",
+    imagen: "/images/sucursales_sinaloa/Suc_Castro.jpg",
     mapsUrl: "https://maps.google.com/?q=Av.+Ju%C3%A1rez+123"
   },
   {
@@ -50,7 +50,7 @@ const sucursalesSinaloa = [
     colonia: "Col. Centro",
     ciudad: "Los Mochis",
     telefono: "668 818 2130",
-    imagen: "/images/sucursal-norte.jpg",
+    imagen: "/images/sucursales_sinaloa/Suc_Centro.jpg",
     mapsUrl: "https://maps.google.com/?q=Calle+Reforma+456"
   },
   {
@@ -58,8 +58,8 @@ const sucursalesSinaloa = [
     direccion: "C. Tlaxcala 1780",
     colonia: "Col. Libertad",
     ciudad: "Los Mochis",
-    telefono: "s/n",
-    imagen: "/images/nvo-horizonte.webp",
+    telefono: "", //Falta telefono
+    imagen: "/images/sucursales_sinaloa/Suc_SanFco.jpg",
     mapsUrl: "https://maps.google.com/?q=Av.+Ju%C3%A1rez+123"
   },
   {
@@ -68,7 +68,7 @@ const sucursalesSinaloa = [
     colonia: "", // Se agregó colonia vacía porque no estaba
     ciudad: "San Blas",
     telefono: "668 820 8361",
-    imagen: "/images/sucursal-norte.jpg",
+    imagen: "", // falta imagen
     mapsUrl: "https://maps.google.com/?q=Calle+Reforma+456"
   },
   {
@@ -77,7 +77,7 @@ const sucursalesSinaloa = [
     colonia: "", // Se agregó colonia vacía porque no estaba
     ciudad: "San Miguel Zapotitlan",
     telefono: "668 813 9125",
-    imagen: "/images/nvo-horizonte.webp",
+    imagen: "/images/sucursales_sinaloa/Suc_SanMiguel.jpg",
     mapsUrl: "https://maps.google.com/?q=Av.+Ju%C3%A1rez+123"
   },
   {
@@ -86,7 +86,7 @@ const sucursalesSinaloa = [
     colonia: "", // Se agregó colonia vacía porque no estaba
     ciudad: "El Fuerte",
     telefono: "698 893 1893",
-    imagen: "/images/sucursal-norte.jpg",
+    imagen: "/images/sucursales_sinaloa/Suc_ElFuerte.jpg", 
     mapsUrl: "https://maps.google.com/?q=Calle+Reforma+456"
   }
 ];
