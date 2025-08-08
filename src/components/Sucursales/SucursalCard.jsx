@@ -1,9 +1,26 @@
 import "./SucursalCard.css";
 
-const SucursalCard = ({ nombre, direccion,colonia, ciudad, telefono, mapaUrl, imagen }) => {
+const SucursalCard = ({
+  nombre,
+  direccion,
+  colonia,
+  ciudad,
+  telefono,
+  mapsUrl,  // unificado con arreglo
+  imagen,
+}) => {
   return (
-    <div className="sucursal">
-      <img src={imagen} alt={nombre} className="sucursal-img" />
+    <div className="sucursal-card">
+      <div className="sucursal-image-container">
+        {imagen ? (
+          <img src={imagen} alt={nombre} className="sucursal-img" />
+        ) : (
+          <div className="sucursal-img-placeholder">
+            {/* Puedes poner texto o una imagen por defecto aquí */}
+            Sin imagen
+          </div>
+        )}
+      </div>
       <div className="sucursal-info">
         <h3 className="sucursal-nombre">{nombre}</h3>
         <p className="sucursal-direccion">{direccion}</p>
@@ -11,7 +28,7 @@ const SucursalCard = ({ nombre, direccion,colonia, ciudad, telefono, mapaUrl, im
         <p className="sucursal-ciudad">{ciudad}</p>
         <p className="sucursal-telefono">📞 {telefono}</p>
         <a
-          href={mapaUrl}
+          href={mapsUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="sucursal-mapa"
