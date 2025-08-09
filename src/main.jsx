@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Promos } from './components/sections/promos/Promos'
 import BotonWhatsApp from './components/boton-whatsapp/BotonWhastapp';
+import { Footer } from './components/footer/footer';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,5 +14,6 @@ createRoot(document.getElementById('root')).render(
     <Promos/>
     <ContenedorSucursales/>
     <BotonWhatsApp/>
+    <Footer/>
   </StrictMode>,
 )
