@@ -31,6 +31,7 @@
   object-fit: cover; /* Cubre el contenedor manteniendo relación de aspecto */
   object-position: center;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 /* Placeholder de carga */
