@@ -5,13 +5,13 @@ import ContenedorSucursales from './components/Sucursales/ContenedorSucursales'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Promos } from './components/sections/promos/Promos'
-import BotonWhatsapp from './components/BotonWhatsapp/BotonWhastapp'
+import BotonWhatsApp from './components/boton-whatsapp/BotonWhastapp';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Hero/>
     <Promos/>
     <ContenedorSucursales/>
-    <BotonWhatsapp/>
+    <BotonWhatsApp/>
   </StrictMode>,
 )

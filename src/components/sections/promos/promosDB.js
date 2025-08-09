@@ -1,22 +1,27 @@
+import { image } from "framer-motion/client";
+
 const promosDB = [
   {
-    image: "/public/images/promo1.jpg",
+    image: "/images/promos_diarias/promo_lunes.jpg",
   },
   {
-    image: "images/promo2.jpg",
+    image: "/images/promos_diarias/promo_martes.jpg",
   },
   {
-    image: "images/promo3.jpg",
+    image: "/images/promos_diarias/promo_miercoles.jpg",
   },
   {
-    image: "images/promo4.jpg",
+    image: "/images/promos_diarias/promo_jueves.jpg",
   },
   {
-    image: "images/promo5.jpg",
+    image: "/images/promos_diarias/promo_viernes.jpg",
   },
   {
-    image: "images/promo6.jpg",
+    image: "/images/promos_diarias/promo_sabado.jpg",
   },
+  {
+    image: "/images/promos_diarias/promo_domingo.jpg"
+  }
 ];
 
 export default promosDB

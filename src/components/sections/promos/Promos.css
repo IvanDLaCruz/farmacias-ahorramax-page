@@ -49,14 +49,18 @@
 }
 
 /* 📝 Estilos para el título */
-.promo-title {
-  padding: 15px;
-  font-size: 1.1rem;
-  font-weight: 600;
+.promos-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
   color: #333;
-  text-align: center;
-  margin: 0;
 }
+
+.promos-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
 
 /* 🎮 Estilos de navegación */
 .swiper-button-next,
