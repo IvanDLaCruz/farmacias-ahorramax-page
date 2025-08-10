@@ -1,19 +1,20 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import Hero from './components/hero/Hero'
-import ContenedorSucursales from './components/Sucursales/ContenedorSucursales'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { Promos } from './components/sections/promos/Promos'
-import BotonWhatsApp from './components/boton-whatsapp/BotonWhastapp';
-import { Footer } from './components/footer/footer';
+import { StrictMode } from "react";
+import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Home } from "./pages/Home";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Hero/>
-    <Promos/>
-    <ContenedorSucursales/>
-    <BotonWhatsApp/>
-    <Footer/>
-  </StrictMode>,
-)
+    <BrowserRouter>
+      <>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+          </Routes>
+        </main>
+      </>
+    </BrowserRouter>
+  </StrictMode>
+);
