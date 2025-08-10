@@ -34,7 +34,7 @@ export const Footer = () => {
       <div className="footer-column">
         <h3>Sucursales</h3>
         <ul>
-          <li><a href="#">Sucursales</a></li>
+          <li><a href="#sucursales">Sucursales</a></li>
           <li><a href="#">Servicio a Domicilio</a></li>
         </ul>
       </div>
