@@ -1,21 +1,23 @@
 import { StrictMode } from "react";
-import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Home } from "./pages/Home";
+import { Navbar } from "./components/navbar/Navbar";
+
+const About = () => <h2>Sobre Nosotros</h2>;
+const Contact = () => <h2>Contacto</h2>;
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <>
-        <main>
-          <Routes>
-            <Route path="/" element={<Home/>}/>
-          </Routes>
-        </main>
-      </>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
     </BrowserRouter>
   </StrictMode>
 );
-
