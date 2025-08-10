@@ -4,17 +4,19 @@ import "./footer.css";
 export const Footer = () => {
   return (
     <div className="contenedorPrincipal">
+        <img src="images/logo-ahorramax-sf.png" alt="" />
       <div className="contacto">
-        <h2>Contacto</h2>
+        <h2 className="contactoTitle">Contacto</h2>
         <p>Teléfono</p>
         <p>Dirección</p>
         <p>Correo</p>
       </div>
 
       <div className="paginas">
-        <a href="/about">Sobre nosotros</a>
+        <h2>Contenido</h2>
+        <a className="paginasContent" href="/about">Sobre nosotros</a>
       </div>
-      <div>
+      <div className="redesSociales">
         <h2>Redes Sociales</h2>
 
         <a href="">

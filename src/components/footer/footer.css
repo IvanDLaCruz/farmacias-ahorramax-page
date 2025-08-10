@@ -4,15 +4,25 @@ body {
     margin: 0;
 }
 
-h2, p {
-    font-size:x-large;
+h2,
+p {
+    font-size: x-large;
+    margin-top: 0;
+    /* Para que los h2 no tengan margen superior */
+    margin-bottom: 0.5rem;
+    /* Espacio razonable debajo */
+}
+
+img {
+    width: 400px;
+    margin-top: 1rem    ;
 }
 
 a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     font-weight: bold;
-    font-size:x-large;
+    font-size: x-large;
 }
 
 #root {
@@ -32,6 +42,27 @@ main {
     display: flex;
     flex: 2;
     justify-content: center;
-    align-items: center;
-    gap: 20rem;
+    align-items: flex-start;
+    /* Cambio: alineamos los hijos arriba */
+    gap: 12rem;
+}
+
+.contenedorPrincipal>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Alinea el contenido interno arriba y a la izquierda */
+}
+
+.contacto h2, .paginas h2, .redesSociales h2 {
+    position: relative;
+    /* por si quieres más control */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+    /* espacio entre texto y línea */
+    border-bottom: 3px solid #000000;
+    /* color y grosor de la barra */
+    width: fit-content;
+    /* que la barra sea sólo del ancho del texto */
 }
