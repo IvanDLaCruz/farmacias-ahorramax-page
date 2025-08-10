@@ -1,4 +1,3 @@
-
 import { StrictMode } from "react";
 import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
 import { createRoot } from "react-dom/client";
