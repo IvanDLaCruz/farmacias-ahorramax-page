@@ -1,21 +1,22 @@
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
   padding: 1rem 1.5rem;
-  color: #333333;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-  position: sticky;
+
   top: 0;
   z-index: 1000;
+  position: relative;
 }
 
+/* ===== LOGO ===== */
 .navbar-logo img {
   max-height: 55px;
-  width: auto;
 }
 
+/* ===== LINKS ===== */
 .navbar-links {
   display: flex;
   list-style: none;
@@ -23,47 +24,73 @@
 }
 
 .navbar-links li a {
-  color: #333333;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem; /* letras más grandes */
+  font-size: 1.2rem;
+  color: #333;
   position: relative;
   transition: color 0.3s ease;
 }
 
-.navbar-links li a::after {
+.navbar-links li a:hover {
+  color: #00bcd4;
+}
+
+.navbar-links li.active a {
+  color: #00bcd4;
+}
+
+.navbar-links li.active a::after {
   content: "";
   display: block;
   height: 2px;
-  width: 0%;
-  background-color: #f06292;
-  transition: width 0.3s ease;
+  width: 100%;
+  background-color: #00bcd4;
   position: absolute;
   bottom: -4px;
   left: 0;
 }
 
-.navbar-links li a:hover {
-  color: #f06292;
-}
-
-.navbar-links li a:hover::after {
-  width: 100%;
-}
-
-/* Menú hamburguesa */
-.menu-toggle {
-  display: none;
-}
-
+/* ===== HAMBURGER ICON ===== */
 .menu-icon {
   display: none;
-  font-size: 1.8rem;
-  color: #333333;
   cursor: pointer;
+  width: 25px;
+  height: 20px;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
-/* Responsivo */
+.menu-icon span {
+  background: #333;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.menu-icon span:nth-child(1) { top: 0; }
+.menu-icon span:nth-child(2) { top: 8px; }
+.menu-icon span:nth-child(3) { top: 16px; }
+
+.menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+/* ===== RESPONSIVE MENU ===== */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -71,38 +98,39 @@
 
   .navbar-links {
     position: absolute;
-    top: 70px;
-    right: 0;
-    background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
+    top: 100%;
+    left: 0;
+    width: 100%;
     flex-direction: column;
-    width: 220px;
-    padding: 1.5rem;
-    display: none;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    border-radius: 0 0 10px 10px;
+    align-items: center;
+    background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+     pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .navbar-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    
   }
 
   .navbar-links li {
-    margin-bottom: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
   }
 
-  .navbar-links li a {
-    font-size: 1.3rem; /* más grande también en móviles */
+  /* opcinal - indicador de pagina 
+.navbar-links li.active {
+    background: rgba(0, 188, 212, 0.1);
   }
-
-  .menu-toggle:checked + .menu-icon + .navbar-links {
-    display: flex;
-    animation: slideDown 0.3s ease;
-  }
-
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+  */
+  
 }

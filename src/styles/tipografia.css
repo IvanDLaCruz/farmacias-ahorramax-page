@@ -2,7 +2,7 @@
 
 /* Variables base con tamaños fluidos usando clamp(min, preferido, max) */
 :root {
-  --font-heading: 'Kanit', sans-serif;
+  --font-heading: 'kanit', sans-serif;
   --font-body: 'Roboto', sans-serif;
 
   /* Tamaño base del texto */
