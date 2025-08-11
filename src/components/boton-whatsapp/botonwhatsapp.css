@@ -1,0 +1,73 @@
+/* BotonWhatsApp.css */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  z-index: 999;
+}
+
+.whatsapp-message {
+  background-color: #e1ffc7; /* verde claro WhatsApp */
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* punta de la burbuja */
+.whatsapp-message::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left-color: #e1ffc7;
+}
+
+/* animación solo en el texto */
+.whatsapp-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #25d366;
+  width: 0;
+  animation: escribir 1.5s steps(9, end) forwards, parpadeo 0.7s infinite;
+}
+
+@keyframes escribir {
+  to { width: 100%; }
+}
+
+@keyframes parpadeo {
+  50% { border-color: transparent; }
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp-button img {
+  width: 32px;
+  height: 32px;
+}
