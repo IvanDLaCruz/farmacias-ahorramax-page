@@ -2,7 +2,7 @@ import "./hero.css";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-content">
         <div className="hero-text">
           <h1>¡Mas barato que las del mono bailarin!</h1>
