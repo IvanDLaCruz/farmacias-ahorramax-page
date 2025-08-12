@@ -4,6 +4,8 @@ import ContenedorSucursales from "../components/Sucursales/ContenedorSucursales"
 import BotonWhatsApp from "../components/boton-whatsapp/BotonWhastapp";
 import { Footer } from "../components/footer/Footer";
 import "../styles/tipografia.css";
+import CategoriasSlider from "../components/categorias-productos/CategoriasSlider";
+
 
 export const Home = () => {
   return (
@@ -11,6 +13,7 @@ export const Home = () => {
       <Hero />
       <Promos />
       <ContenedorSucursales />
+      <CategoriasSlider/>
       <BotonWhatsApp />
       <Footer />
     </>

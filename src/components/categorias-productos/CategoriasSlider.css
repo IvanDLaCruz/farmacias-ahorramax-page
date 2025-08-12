@@ -1,0 +1,57 @@
+.categorias-slider {
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.categoria-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.categoria-item .icon {
+  width: 120px;
+  height: 120px;
+  background-color: #d5e7e9;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #00a6c4;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.categoria-item p {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
+  max-width: 120px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Ahora nth-child funciona porque SwiperSlide tiene clase categoria-item */
+.categoria-item:nth-child(1) .icon { background-color: #b9e6e8; }
+.categoria-item:nth-child(2) .icon { background-color: #d9e9f9; }
+.categoria-item:nth-child(3) .icon { background-color: #c1b7d9; }
+.categoria-item:nth-child(4) .icon { background-color: #f7d1dd; }
+.categoria-item:nth-child(5) .icon { background-color: #fcd5cc; }
+.categoria-item:nth-child(6) .icon { background-color: #fff5e6; }
+
+/* Swiper navegación y scroll: ocultar en escritorio para que se vea fija */
+@media(min-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-wrapper {
+    overflow: visible !important;
+  }
+}
