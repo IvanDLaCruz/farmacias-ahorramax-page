@@ -1,0 +1,7 @@
+.page-wrapper {
+  max-width: 1200px;     /* ancho máximo deseado */
+  margin: 0 auto;        /* centra horizontalmente */
+  padding-left: 20px;    /* margen lateral izquierdo */
+  padding-right: 20px;   /* margen lateral derecho */
+  box-sizing: border-box;
+}

@@ -59,7 +59,7 @@ const sucursalesSonora = [
     colonia: 'Infonavit Yucujimari',
     ciudad: 'Ciudad Obregon',
     telefono: '644 414 5920',
-    imagen: '//images/sucursales_sonora/Suc_Guerrero.jpg',
+    imagen: '/images/sucursales_sonora/Suc_Guerrero.jpg',
     mapsUrl: 'https://maps.google.com/?q=Av.+Ju%C3%A1rez+123',
   },
   {

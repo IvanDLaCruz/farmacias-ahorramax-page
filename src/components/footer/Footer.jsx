@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="footer-logo">
         <img src="/images/logo-ahorramax-sf.png" alt="logo-ahorramax" />
         <div className="footer-social">
-          <a href="#" aria-label="Facebook"><FaFacebookF /></a>
+          <a href="https://www.facebook.com/FarmaciaAhorraMax" target="_blank" aria-label="Facebook"><FaFacebookF /></a>
           <a href="#" aria-label="Instagram"><FaInstagram /></a>
           
         </div>

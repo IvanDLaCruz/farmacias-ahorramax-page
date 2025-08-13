@@ -17,6 +17,7 @@
 /* ===== LOGO ===== */
 .navbar-logo img {
   max-height: 55px;
+  width: auto;
 }
 
 /* ===== LINKS ===== */
