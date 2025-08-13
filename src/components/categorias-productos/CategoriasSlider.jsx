@@ -12,6 +12,7 @@ const CategoriasSlider = () => {
     <div className="categorias-slider">
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
+        Navigation //revisar
         pagination={{ clickable: true }}
         loop={true}
         spaceBetween={30}
