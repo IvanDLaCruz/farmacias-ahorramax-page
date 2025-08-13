@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 import promosDB from "./promosDB";
 export const Promos = () => {
   return (
-    <div className="promos-section">
+    <div className="promos-section" id="promociones-diarias">
       <h2 className="promos-title">Aprovecha nuestras promociones diarias ¡Al mejor precio!</h2>
 
       <Swiper

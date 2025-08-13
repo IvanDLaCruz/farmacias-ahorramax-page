@@ -2,7 +2,7 @@ import './SelectorEstado.css';
 
 const SelectorEstado = ({ estadoActual, cambiarEstado }) => {
   return (
-    <div className="selector-estado-wrapper">
+    <div className="selector-estado-wrapper" id='sucursales'>
       <h2 className="titulo-sucursales">Nuestras sucursales</h2>
       <div className="selector-estado">
         <button
