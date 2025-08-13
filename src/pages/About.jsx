@@ -15,6 +15,8 @@ export const About = () => {
             <ExperienciaCounter numeroFinal={2} duracion={1000} texto={"Estados"} />
           </div>
         </div>
+
+        <div className="about-page-wrapper">
         <div className="container">
           <h2>¿Quienes somos?</h2>
           <p>
@@ -26,6 +28,9 @@ export const About = () => {
             productos naturales y artículos de ortopedia y rehabilitación.
           </p>
         </div>
+      </div>
+      
+        
       </div>
     </>
   );
