@@ -1,10 +1,9 @@
 import Hero from "../components/hero/Hero";
 import { Promos } from "../components/sections/promos/Promos";
 import ContenedorSucursales from "../components/Sucursales/ContenedorSucursales";
-
 import "../styles/tipografia.css";
 import CategoriasSlider from "../components/categorias-productos/CategoriasSlider";
-import "./Home.css"
+import "./Home.css";
 
 export const Home = () => {
   return (
@@ -18,18 +17,12 @@ export const Home = () => {
         linkButton={"#promociones-diarias"}
         nameButton={"Ver promociones"}
       />
-      <Promos />
-      <ContenedorSucursales />
-      <CategoriasSlider />
-      <BotonWhatsApp />
-      <Footer />
-      <Hero />
-     <div className="page-wrapper">
+      <div className="page-wrapper">
+        <CategoriasSlider />
+
         <Promos />
         <ContenedorSucursales />
-        <CategoriasSlider />
       </div>
-      
     </>
   );
 };

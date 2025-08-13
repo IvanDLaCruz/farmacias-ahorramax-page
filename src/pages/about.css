@@ -110,7 +110,7 @@
   }
 
   .about .heroAbout h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
     margin-top: 9rem;
   }
 
@@ -125,5 +125,6 @@
     gap: 1rem;
     padding: 0 1rem;
     justify-items: center;
+    margin-bottom: 6rem ;
   }
 }
