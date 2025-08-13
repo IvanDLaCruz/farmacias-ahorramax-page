@@ -4,19 +4,15 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
-  padding: 1rem 1rem;
-
-  position: fixed; /* Siempre visible */
+  padding: 1rem 1.5rem;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
 }
-
-
 
 /* ===== LOGO ===== */
 .navbar-logo img {
@@ -26,15 +22,12 @@
 /* ===== LINKS ===== */
 .navbar-links {
   display: flex;
-  list-style: none;
   gap: 2rem;
 }
 
 .navbar-links li a {
-  text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
-  color: #333;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -106,7 +99,7 @@
 
   .navbar-links {
     position: absolute;
-    top: 100%; /* Justo debajo del navbar */
+    top: 100%;
     left: 0;
     width: 100%;
     flex-direction: column;

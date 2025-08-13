@@ -1,8 +1,8 @@
+/* ===== Tipografía global ===== */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Roboto:wght@400;500&display=swap');
 
-/* Variables base con tamaños fluidos usando clamp(min, preferido, max) */
 :root {
-  --font-heading: 'kanit', sans-serif;
+  --font-heading: 'Kanit', sans-serif;
   --font-body: 'Roboto', sans-serif;
 
   /* Tamaño base del texto */
@@ -27,7 +27,7 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   margin: 0;
-  padding: 0;
+  padding-top: 80px; /* Evita que el navbar fijo tape contenido */
 }
 
 /* Títulos con Kanit */
@@ -37,23 +37,32 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.75em;
 }
 
-h1 {
-  font-size: var(--font-size-h1);
-}
-
-h2 {
-  font-size: var(--font-size-h2);
-}
-
-h3 {
-  font-size: var(--font-size-h3);
-}
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
 
 p, small {
   font-family: var(--font-body);
 }
 
-/* Texto pequeño */
 small {
   font-size: var(--font-size-small);
+}
+
+/* ===== Reset y utilidades globales ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
