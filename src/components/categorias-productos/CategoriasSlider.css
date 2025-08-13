@@ -21,9 +21,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 48px;
-  color: #00a6c4;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.categoria-item .icon img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
 }
 
 .categoria-item p {
@@ -37,7 +42,7 @@
   word-wrap: break-word;
 }
 
-/* Ahora nth-child funciona porque SwiperSlide tiene clase categoria-item */
+/* Colores alternos para cada ítem */
 .categoria-item:nth-child(1) .icon { background-color: #b9e6e8; }
 .categoria-item:nth-child(2) .icon { background-color: #d9e9f9; }
 .categoria-item:nth-child(3) .icon { background-color: #c1b7d9; }
@@ -45,11 +50,11 @@
 .categoria-item:nth-child(5) .icon { background-color: #fcd5cc; }
 .categoria-item:nth-child(6) .icon { background-color: #fff5e6; }
 
-/* Swiper navegación y scroll: ocultar en escritorio para que se vea fija */
+/* Ocultar botones de navegación y hacer fijo en escritorio */
 @media(min-width: 1024px) {
   .swiper-button-prev,
   .swiper-button-next {
-    display: none;
+    display: none !important;
   }
   .swiper-wrapper {
     overflow: visible !important;
