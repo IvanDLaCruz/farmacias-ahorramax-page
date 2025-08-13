@@ -1,11 +1,21 @@
+.counters-container {
+  display: flex;
+  flex-direction: column; /* tarjetas apiladas verticalmente */
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Tarjetas */
 .experiencia-counter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
   font-weight: bold;
+  color: white;
 }
 
+/* Número y símbolo */
 .numero-simbolo {
   display: flex;
   align-items: baseline;
@@ -13,19 +23,107 @@
 }
 
 .numero {
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: 1;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 
 .simbolo {
-  font-size: 2rem;
-  color: red;
+  font-size: 4rem;
+  color: rgb(255, 0, 0);
   line-height: 1;
 }
 
 .texto {
-  font-size: 1.1rem;
+  font-size: 2rem;
   text-align: center;
   color: black;
 }
+
+/* Responsive para móviles */
+.counters-container {
+  display: flex;
+  flex-direction: column; /* tarjetas apiladas verticalmente */
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Tarjetas individuales */
+.experiencia-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}
+
+/* Número y símbolo */
+.numero-simbolo {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+   margin-bottom: 0; /* elimina margen inferior si existe */
+}
+
+.numero {
+  font-size: 5rem;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+}
+
+.simbolo {
+  font-size: 4rem;
+  color: rgb(255, 0, 0);
+  line-height: 1;
+}
+
+.texto {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .statistics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    padding: 0 1rem;
+    justify-items: center; /* centrar contenido en cada celda */
+    align-items: start; /* alinea las tarjetas arriba para evitar desajustes */
+  }
+
+  .experiencia-counter {
+    border-radius: 16px;
+    padding: 1rem;
+    width: 100%;      /* ocupa todo el ancho del grid cell */
+    max-width: 320px; /* máximo ancho para uniformidad */
+    color: white;
+    animation: fadeZoomIn 0.6s ease forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0; /* elimina cualquier espacio entre hijos */
+    margin-bottom: 0;
+  }
+
+  .numero {
+    font-size: 3rem;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .simbolo {
+    font-size: 3rem;
+  }
+
+  .texto {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 0;  /* elimina margen arriba */
+    padding-top: 0; /* elimina padding arriba */
+  }
+}
+

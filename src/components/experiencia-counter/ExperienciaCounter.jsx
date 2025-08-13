@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./experienciacounter.css";
+import "./experienciacounter.css"
 
 const ExperienciaCounter = ({ numeroFinal, duracion, texto }) => {
   const [count, setCount] = useState(0);

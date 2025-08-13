@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   const links = [
     { path: "/", label: "Inicio" },
-    { path: "/about", label: "Sobre nosotros" },
+    { path: "/sobrenosotros", label: "Sobre nosotros" },
     { path: "/contact", label: "Contáctanos" },
   ];
 

@@ -1,0 +1,129 @@
+.about .heroAbout {
+    position: relative;
+    width: 99vw;
+    height: 90vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Overlay oscuro */
+.about .heroAbout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about .heroAbout img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 0;
+}
+
+/* Texto sobre imagen */
+.about .heroAbout h1,
+.about .heroAbout p {
+    position: relative;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 2;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.about .heroAbout h1 {
+    font-size: 8rem;
+    font-weight: 400;
+    max-width: 1000px;
+    margin-top: 1rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    animation: fadeSlideUp 1.2s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    font-family: var(--font-tinos)
+}
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estadísticas */
+.about .statistics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    z-index: 2;
+}
+
+/* Contenedor general */
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.about .container h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.about .container p {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about .heroAbout {
+    height: 90vh;
+    padding: 1rem;
+  }
+
+  .about .heroAbout h1 {
+    font-size: 3.3rem;
+    margin-top: 9rem;
+  }
+
+  .about .heroAbout p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .about .statistics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+    justify-items: center;
+  }
+}

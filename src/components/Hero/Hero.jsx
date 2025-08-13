@@ -1,13 +1,13 @@
 import "./hero.css";
 
-function Hero() {
+function Hero({title, description, subtitle, nameButton, linkButton}) {
   return (
     <section className="hero" id="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <h1>¡Mas barato que las del mono bailarin!</h1>
-          <p><strong>¡Aprovecha nuestras ofertas! </strong>Encuentra una amplia variedad de medicamentos genéricos, similares y de patente. También contamos con productos naturales, artículos de ortopedia y todo lo necesario para rehabilitación.</p>
-          <a href="#promociones-diarias" className="hero-button">Ver promociones</a>
+          <h1>{title}</h1>
+          <p>{subtitle}<strong>{description}</strong></p>
+          <a href={linkButton} className="hero-button">{nameButton}</a>
         </div>
         <div className="hero-image">
           <img
