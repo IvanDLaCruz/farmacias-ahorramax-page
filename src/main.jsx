@@ -4,6 +4,9 @@ import { createRoot } from "react-dom/client";
 import { Home } from "./pages/Home";
 import { Navbar } from "./components/navbar/Navbar";
 import { About } from "./pages/About";
+import {Footer} from "./components/footer/Footer";
+import BotonWhatsApp from "./components/boton-whatsapp/BotonWhastapp";
+
 
 
 createRoot(document.getElementById("root")).render(
@@ -11,11 +14,13 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Navbar />
       <main>
+      <BotonWhatsApp/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobrenosotros" element={<About />} />
         </Routes>
       </main>
+      <Footer />
     </BrowserRouter>
   </StrictMode>
 );

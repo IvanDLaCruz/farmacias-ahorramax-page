@@ -1,10 +1,10 @@
 import Hero from "../components/hero/Hero";
 import { Promos } from "../components/sections/promos/Promos";
 import ContenedorSucursales from "../components/Sucursales/ContenedorSucursales";
-import BotonWhatsApp from "../components/boton-whatsapp/BotonWhastapp";
-import { Footer } from "../components/footer/Footer";
+
 import "../styles/tipografia.css";
 import CategoriasSlider from "../components/categorias-productos/CategoriasSlider";
+import "./Home.css"
 
 export const Home = () => {
   return (
@@ -23,6 +23,13 @@ export const Home = () => {
       <CategoriasSlider />
       <BotonWhatsApp />
       <Footer />
+      <Hero />
+     <div className="page-wrapper">
+        <Promos />
+        <ContenedorSucursales />
+        <CategoriasSlider />
+      </div>
+      
     </>
   );
 };

@@ -1,12 +1,13 @@
 export const Footer = () => {
   return (
-    <div className="footer">
-      <img src="images/logo-ahorramax-sf.png" alt="" />
-      <div className="footer-contacto">
-        <h2 className="footer-contactoTitle">Contacto</h2>
-        <p>Teléfono</p>
-        <p>Dirección</p>
-        <p>Correo</p>
+    <footer className="footer">
+      <div className="footer-logo">
+        <img src="/images/logo-ahorramax-sf.png" alt="logo-ahorramax" />
+        <div className="footer-social">
+          <a href="https://www.facebook.com/FarmaciaAhorraMax" target="_blank" aria-label="Facebook"><FaFacebookF /></a>
+          <a href="#" aria-label="Instagram"><FaInstagram /></a>
+          
+        </div>
       </div>
 
       <div className="footer-paginas">
@@ -47,5 +48,5 @@ export const Footer = () => {
         </div>
       </div>
     </div>
-  );
+  </footer>);
 };
