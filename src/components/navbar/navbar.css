@@ -1,33 +1,33 @@
-/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
   padding: 1rem 1.5rem;
-
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1000;
-  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== LOGO ===== */
 .navbar-logo img {
   max-height: 55px;
+  width: auto;
 }
 
 /* ===== LINKS ===== */
 .navbar-links {
   display: flex;
-  list-style: none;
   gap: 2rem;
 }
 
 .navbar-links li a {
-  text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
-  color: #333;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -61,6 +61,7 @@
   background: none;
   border: none;
   padding: 0;
+  z-index: 1100;
 }
 
 .menu-icon span {
@@ -109,16 +110,15 @@
     transform: translateY(-20px);
     opacity: 0;
     transition: transform 0.4s ease, opacity 0.4s ease;
-     pointer-events: none;
+    pointer-events: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
+    z-index: 1050;
   }
 
   .navbar-links.open {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
-    
   }
 
   .navbar-links li {
@@ -126,11 +126,4 @@
     text-align: center;
     padding: 0.8rem 0;
   }
-
-  /* opcinal - indicador de pagina 
-.navbar-links li.active {
-    background: rgba(0, 188, 212, 0.1);
-  }
-  */
-  
 }

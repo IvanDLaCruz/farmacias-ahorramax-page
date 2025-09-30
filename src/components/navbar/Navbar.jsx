@@ -12,15 +12,18 @@ export const Navbar = () => {
 
   const links = [
     { path: "/", label: "Inicio" },
-    { path: "/about", label: "Sobre nosotros" },
+    { path: "/sobrenosotros", label: "Sobre nosotros" },
     { path: "/contact", label: "Contáctanos" },
   ];
 
   return (
     <nav className="navbar">
       <div className="navbar-logo">
+      <Link to="/">
         <img src="images/logo-ahorramax-sf.png" alt="Logo Ahorramax" />
-      </div>
+      </Link>
+    </div>
+
 
       <button
         className={`menu-icon ${menuOpen ? "open" : ""}`}
