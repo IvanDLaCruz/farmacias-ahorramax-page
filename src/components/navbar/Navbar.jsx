@@ -19,8 +19,11 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
+      <Link to="/">
         <img src="images/logo-ahorramax-sf.png" alt="Logo Ahorramax" />
-      </div>
+      </Link>
+    </div>
+
 
       <button
         className={`menu-icon ${menuOpen ? "open" : ""}`}
